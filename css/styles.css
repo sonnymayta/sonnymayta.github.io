@@ -1,0 +1,51 @@
+:root {
+  --primary-black: #222831;
+  --secondary-black: #393E46;
+  --teal: #00ADB5;
+  --gray: #EEEEEE;
+}
+
+/* Navbar */
+
+.body-background {
+  background-color: var(--secondary-black);
+}
+
+.navbar {
+  padding: 1rem; 
+  background-color: var(--primary-black);  
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-link {
+  color: var(--teal);
+  font-family: "Fira Code", monospace;
+}
+
+.nav-link:hover {
+  color: var(--gray);
+}
+
+.nav-link:focus{
+  color: var(--gray);
+}
+
+/* Hero */
+
+.hero-image-dev {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+/* Text format */
+
+.text-teal {
+  color: var(--teal);
+  font-family: "Fira Code", monospace;
+}
