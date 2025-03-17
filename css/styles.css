@@ -5,11 +5,17 @@
   --gray: #EEEEEE;
 }
 
-/* Navbar */
+/* Body */
 
-.body-background {
+.custom-background-dark {
+  background-color: var(--primary-black);
+}
+
+.custom-background-gray {
   background-color: var(--secondary-black);
 }
+
+/* Navbar */
 
 .navbar {
   padding: 1rem; 
@@ -45,7 +51,44 @@
 
 /* Text format */
 
-.text-teal {
+.custom-text-teal {
   color: var(--teal);
   font-family: "Fira Code", monospace;
+  text-align: center;
+}
+
+.custom-text-gray {
+  color: var(--gray);
+  font-family: "Fira Code", monospace;
+}
+
+.info-project {
+  background-color: var(--primary-black);
+  padding: 2rem;
+}
+
+/* Footer */
+
+.footer-icon {
+  width: 6rem;
+  height: 6rem;
+  margin: 1rem;
+}
+
+.social-media-icon a {
+  color: var(--primary-black);
+  background-color: var(--teal);
+  font-size: 1.5rem;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  margin: 10px;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+}
+
+.social-media-icon a:hover {
+  transform: scale(1.15);
 }

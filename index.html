@@ -28,10 +28,12 @@
   <meta name="theme-color" content="#ffffff">
   <!-- Bootstrap -->
   <link rel="stylesheet" href="/scss/custom.css">
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
   <!-- CSS -->
   <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body class="body-background">
+<body class="custom-background-gray">
   <!-- Navbar -->
   <nav class="navbar navbar-expand-md navbar-light sticky-top">
     <div class="container-fluid">
@@ -107,19 +109,92 @@
         <div class="col-lg-3 col-md-12 d-flex justify-content-center align-items-center">
           <img class="hero-image-dev rounded-circle" src="/assets/images/dark-gray-dog.webp" alt="Foto de Sonny Mayta">
         </div>
-        <div class="col-lg-9 col-md-12 d-flex justify-content-center align-items-center text-teal">            
+        <div class="col-lg-9 col-md-12 d-flex justify-content-center align-items-center custom-text-teal">            
           <h1>Hola, mi nombre es Sonny Mayta</h1>            
         </div>          
       </div>
     </section>
+    <!-- About me -->
     <section id="sobre-mi" class="align-items-center align-items-stretch p-3 mt-4 mb-4">
       <div class="text-center">
-        <h2 class="formato-subtitulo">Sobre mi</h2>
-        <p class="parrafo-claro seccion-text">Tengo 28 años y vivo en ciudad La Paz, Bolivia. Soy ingeniero en sistemas y me especializo como desarrollador web. Mi pasión por la programación y las nuevas tecnologías es insaciable. Disfruto creando proyectos, experimentando, observando el funcionamiento de sistemas y aplicando modificaciones para mejorarlos.</p>
+        <h2 class="custom-text-teal">Sobre mi</h2>
+        <p class="custom-text-gray">Tengo 28 años y vivo en ciudad La Paz, Bolivia. Soy ingeniero en sistemas y me especializo como desarrollador web. Mi pasión por la programación y las nuevas tecnologías es insaciable. Disfruto creando proyectos, experimentando, observando el funcionamiento de sistemas y aplicando modificaciones para mejorarlos.</p>
       </div>
     </section>
-    <span class="badge text-bg-warning">Warning</span>
+    <!-- Sección proyectos -->
+    <section id="proyectos" class="">
+      <div class="p-3 mt-4 mb-4">
+        <div class="text-center">
+          <h2 class="custom-text-teal">Mis proyectos</h2>
+        </div>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Tienda en linea</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Eventos y fotografias</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Creador de personajes</button>
+          </li>          
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active info-project" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            <h3 class="custom-text-teal">Tienda en línea con ASP.NET Core MVC</h3>
+            <p class="custom-text-gray">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum fugiat velit quod distinctio? Corporis consectetur dignissimos impedit rerum aliquid dolore placeat, aut ratione sint nesciunt, reiciendis exercitationem, laborum doloribus quidem?</p>
+            <div class="d-flex justify-content-end gap-2">
+              <button class="btn btn-primary">
+                <i class="bi bi-github"></i> Repositorio
+              </button>
+              <button class="btn btn-primary">
+                <i class="bi bi-cart"></i> Visitar la pagina
+              </button>
+            </div>
+          </div>
+          <div class="tab-pane fade info-project" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <h3 class="custom-text-teal">Aplicación de eventos y fotografias</h3>
+            <p class="custom-text-gray">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum fugiat velit quod distinctio? Corporis consectetur dignissimos impedit rerum aliquid dolore placeat, aut ratione sint nesciunt, reiciendis exercitationem, laborum doloribus quidem?</p>
+            <div class="d-flex justify-content-end gap-2">
+              <button class="btn btn-primary">
+                <i class="bi bi-github"></i> Repositorio
+              </button>
+              <button class="btn btn-primary">
+                <i class="bi bi-camera"></i> Visitar la pagina
+              </button>
+            </div>
+          </div>
+          <div class="tab-pane fade info-project" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+            <h3 class="custom-text-teal">Generador de hoja de personajes</h3>
+            <p class="custom-text-gray">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum fugiat velit quod distinctio? Corporis consectetur dignissimos impedit rerum aliquid dolore placeat, aut ratione sint nesciunt, reiciendis exercitationem, laborum doloribus quidem?</p>
+            <div class="d-flex justify-content-end gap-2">
+              <button class="btn btn-primary">
+                <i class="bi bi-github"></i> Repositorio
+              </button>
+              <button class="btn btn-primary">
+                <i class="bi bi-magic"></i> Visitar la pagina
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>      
+    </section>    
   </div>
+  <!-- Footer -->
+  <footer id="contactos" class="custom-background-dark d-flex flex-column align-items-center justify-content-center pt-3 pb-3">
+    <img class="footer-icon rounded-circle" src="/assets/images/gray-dog.webp">
+    <p class="custom-text-gray text-center">Creo y aprendo todos los días<br>Desarrollemos un proyecto juntos</p>
+    <div class="social-media-icon d-flex flex-wrap align-items-center justify-content-center">    
+      <a href="https://www.linkedin.com/in/sonny-mayta/" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      <a href="https://github.com/sonnymayta" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-github"></i>
+      </a>
+      <a href="mailto:mayta.sonny@gmail.com" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-envelope-at-fill"></i>
+      </a>
+    </div>
+  </footer>
   <script src="/js/bootstrap.min.js";></script>
 </body>
 </html>
