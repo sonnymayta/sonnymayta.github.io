@@ -10,20 +10,6 @@
   src: url(../assets/fonts/FiraCode-VF.ttf);
 }
 
-/* Adaptable */
-
-@media screen and (max-width: 767px) {
-  .navbar-brand {
-    display: none;
-  }
-}
-
-@media  screen and (min-width: 700px) {
-  .hero-inferior-imagen {
-    max-width: 600px;
-  }
-}
-
 /* General */
 
 .custom-background-dark {
@@ -160,4 +146,35 @@ section {
 
 .social-media-icon a:hover {
   transform: scale(1.15);
+}
+
+/* Typewriter */
+
+.typewriter {
+  display: flex;
+}
+
+.typewriter h1 {
+  font-family: "Fira Code VF", monospace;  
+  color: var(--teal);
+  margin-inline: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 1px solid;
+  animation: typing 3s steps(22) forwards, blink 1s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
