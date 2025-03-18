@@ -5,7 +5,26 @@
   --gray: #EEEEEE;
 }
 
-/* Body */
+@font-face {
+  font-family: "Fira Code VF";
+  src: url(../assets/fonts/FiraCode-VF.ttf);
+}
+
+/* Adaptable */
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media  screen and (min-width: 700px) {
+  .hero-inferior-imagen {
+    max-width: 600px;
+  }
+}
+
+/* General */
 
 .custom-background-dark {
   background-color: var(--primary-black);
@@ -13,6 +32,10 @@
 
 .custom-background-gray {
   background-color: var(--secondary-black);
+}
+
+section {
+  scroll-margin-top: 5rem; 
 }
 
 /* Navbar */
@@ -29,7 +52,7 @@
 
 .nav-link {
   color: var(--teal);
-  font-family: "Fira Code", monospace;
+  font-family: "Fira Code VF", monospace;
 }
 
 .nav-link:hover {
@@ -53,18 +76,64 @@
 
 .custom-text-teal {
   color: var(--teal);
-  font-family: "Fira Code", monospace;
+  font-family: "Fira Code VF", monospace;
   text-align: center;
 }
 
 .custom-text-gray {
   color: var(--gray);
-  font-family: "Fira Code", monospace;
+  font-family: "Fira Code VF", monospace;
 }
 
 .info-project {
   background-color: var(--primary-black);
   padding: 2rem;
+}
+
+/* Knowledge */
+
+.knowledge .custom-column {  
+  font-family: "Fira Code VF", monospace;
+  background-color: var(--primary-black);
+  color: var(--gray);
+  padding: 2rem 2rem;  
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+}
+
+.knowledge .custom-column:hover {
+  color: var(--primary-black);
+  background-color: var(--gray);  
+}
+
+.knowledge-title {  
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 1rem 0.5rem;
+}
+
+.knowledge i {
+  font-size: 2.5rem;
+  color: var(--primary-black);
+  background-color: var(--teal);
+  padding: 8px 19px;
+  border-radius: 50%;
+}
+
+.custom-span {
+  display: inline-block;
+  background-color: var(--teal); 
+  color: var(--primary-black); 
+  padding: 5px 10px; 
+  border-radius: 10px; 
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: "Fira Code VF", monospace;
+  font-weight: 500;
 }
 
 /* Footer */
